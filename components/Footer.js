@@ -78,6 +78,7 @@ const ThemeSwitcher = () => {
 };
 import Image from 'next/image'
 import weixin from './weixin.png'
+import ClickDownload from './ClickDownload'
 export default function Footer({ copyrightText }) {
   return (
     <footer className="flex flex-col items-center py-16">
@@ -91,7 +92,7 @@ export default function Footer({ copyrightText }) {
         width={300}
         height={300}
       />
-      
+      <ClickDownload></ClickDownload>
     </footer>
   );
 }
