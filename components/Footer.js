@@ -76,14 +76,22 @@ const ThemeSwitcher = () => {
     </div>
   );
 };
-
+import Image from 'next/image'
+import weixin from './weixin.png'
 export default function Footer({ copyrightText }) {
   return (
     <footer className="flex flex-col items-center py-16">
-      <p className="mb-3 font-bold uppercase dark:text-white opacity-60">
+      <ThemeSwitcher />
+      <p className="mb-3 mt-8 font-bold uppercase dark:text-white opacity-60">
         {copyrightText}
       </p>
-      <ThemeSwitcher />
+      <Image
+        src={weixin}
+        alt="暂不支持"
+        width={300}
+        height={300}
+      />
+      
     </footer>
   );
 }
