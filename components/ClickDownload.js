@@ -26,9 +26,9 @@ export default function ClickDownload() {
 
   return (
     <div>
-      <h1>Download File Example</h1>
+      <h1>功能测试</h1>
       <button onClick={downloadFile} disabled={loading}  style={{ backgroundColor: 'yellow', padding: '10px', border: 'none', borderRadius: '5px' }}>
-        {loading ? 'Downloading...' : 'Download File'}
+        {loading ? '下载中...' : '下载文件'}
       </button>
     </div>
   )
